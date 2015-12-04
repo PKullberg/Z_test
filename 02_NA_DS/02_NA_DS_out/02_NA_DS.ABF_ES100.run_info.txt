@@ -1,0 +1,167 @@
+Zonation 4.0.0rc1_compact, build: Sep 19 2014 18:16:13
+==========================================================================
+The Zonation software is distributed in the  hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+==========================================================================
+ For more information and conditions of use of this software, see the
+ disclaimer in Help->About Zonation, in the graphical user interface
+
+Starting Zonation run on 'LH4-EKOEVO2' at 4:35:42 PM (2015/12/4) 
+Locale is: C
+Zonation core process parameters: 
+   run mode: normal run (-r)
+   settings file: 02_NA_DS.dat
+   biodiversity features list file: 02_NA_DS.spp
+   output file(s): 02_NA_DS_out/02_NA_DS
+   info-gap alpha: 0
+   use_smoothing: 1
+   smoothing_alpha_multiplier: 1
+   autoclose (deprecated): 0
+
+Reading settings file: 02_NA_DS.dat
+   Option not overriden in command line, removal rule: 2
+   Option not overriden in command line, warp factor: 2000
+
+Output settings:
+   Output weighted range size corrected richness map: yes
+   Output proportional loss rank map: no
+
+********** Arbitrary kernels not enabled ********
+
+*************** NOT USING ANALYSIS AREA MASK **************
+
+Loading list of biodiversity features from file: 02_NA_DS.spp
+Row count in the features/species list file: 1
+../NA_raster.tif: 100 rows, 100 columns read. Nodata cells =  9637, sum of elements = 363
+
+Matrix columns/x dimension: 100, rows/y dimension: 100
+
+****** REMOVAL RULE: Convex additive benefit function (ABF); r^par *******
+
+****** NOT using Info-gap distribution discounting uncertainty analysis ****************
+
+
+*** Not using "drop 0 occurrence features", all features will be processed even if they do not occur anywhere in the analysis area.
+===============
+Note: using the following features which require additional memory for smoothing kernels: distribution smoothing 
+Approximately 0.766 MBs of additional memory are required. Trying to allocate...
+Doing connectivity smoothings: initializing
+Using 1 thread(s) for preprocessing.
+Memory allocated successfully!
+===============
+
+======------ Allocating memory for input layers... ------======
+Using compact structure (lookup version),  sizeof(Occur_Container): 18, sizeof(allocated occurrence): 6
+Counting effective occurrencies
+Time: 1449239742 = 4:35:42 PM (2015/12/4) 
+Feature file #1: ../NA_raster.tif; non-missing cells: 363
+Total # of feature layers: 1
+Total # of cells in every layer: 10000
+Effective # of cells (cells with any occurrence, globally): 363
+Total # of occurrencies: 363, counted across 1 layers; average across layers: 363
+Percentage of globally effective occurrencies = 100 % (relative to total effective cells) = 3.63 % (relative to total cells)
+Memory required for biodiversity features: 0.0846 MB, of which base memory: 0.08253 MB, and occurrencies require: 0.002077 MB
+Time now: 1449239742 = 4:35:42 PM (2015/12/4) 
+Finished preload/counting effective occurrencies. Elapsed: 0 seconds.
+======------ Allocating memory for input layers: finished successfully ------======
+
+******=====----- Loading feature (e.g., species) data layers -----=====**********
+
+====== Note: generating feature (e.g., species) transformed layers =====
+This requires additional memory:  0.03815 MB
+Memory allocated successfully... 
+
+* Loaded biodiversity feature file #1, ../NA_raster.tif, non-missing cells:363, their sum: 363
+Calculating centers of the distributions of 1 features...
+
+******=====----- Distribution smoothing is on. Transforming input layers... -----=====******
+* Applying distribution smoothing on feature #1, ../NA_raster.tif
+DS connectivity calculations - Kernel calculated; alpha= 1
+Saving raster: 02_NA_DS_out/02_NA_DS.ABF_ES100_transf_distrib_smooth_layers/feat_1_NA_raster__DS.compressed.tif (GTiff format)
+Freeing structures required for distribution smoothing... 
+ ...Done.
+******=====----- Finished distribution smoothing transformations in 0 seconds. -----=====******
+
+
+******=====----- Finished loading and transformation of feature data layers -----=====*********
+
+Calculating richness across biodiversity features...
+Done in 0 seconds. Time now: 4:35:42 PM (2015/12/4) 
+Saving raster map of weighted range size corrected richness
+Saving raster: 02_NA_DS_out/02_NA_DS.ABF_ES100.wrscr.compressed.tif (GTiff format)
+
+******=====----- Preparing to start the ranking process... -----=====**********
+Note: using edge removal.
+
+Loaded data and initialized in 0 seconds. Current time: 4:35:42 PM (2015/12/4) 
+Cells with data = 363; locations with missing values = 9637
+
+---------------------======********** RANKING STARTS HERE ***********======-----------------------
+Initially removed cells count = 0
+Note: No initial removal was used.
+
+Biodiversity features performance levels check. Proportions remaining:
+---------
+Feature 1:    1
+---------
+Minimum proportion remaining:    1, average:    1, weighted average:    1, maximum:    1
+
+
+The following lines provide information on how the ranking is done by iterative removal of cells, with 6 columns per line:
+Cells removed, proportion of landscape remaining, cost of remaining landscape, edge list length, smallest remaining proportion in all biodiversity features (e.g. species), time elapsed (s)
+----------------------------------------------------------------------------------------------------------------------------
+             0            100%%              0            120              1            0
+            14        96.1538%%            350            120       0.968761            0
+            28        92.3077%%            336            116       0.932125            0
+            42        88.4615%%            322            116       0.895269            0
+            56        84.6154%%            308            112       0.858256            0
+            70        80.7692%%            294            109        0.82104            0
+            84        76.9231%%            280            108        0.78366            0
+            98        73.0769%%            266            104       0.746115            0
+           112        69.2308%%            252            103       0.708394            0
+           126        65.3846%%            238            100       0.670543            0
+           140        61.5385%%            224             97       0.632532            0
+           154        57.6923%%            210             96       0.594396            0
+           168        53.8462%%            196             92       0.556138            0
+           182             50%%            182             89       0.517747            0
+           196        46.1538%%            168             81       0.479256            0
+           210        42.3077%%            154             73       0.440658            0
+           224        38.4615%%            140             59       0.401954            0
+           238        34.6154%%            126             45       0.363121            0
+           252        30.7692%%            112             40       0.323723            0
+           266        26.9231%%             98             39        0.28386            0
+           280        23.0769%%             84             36       0.243921            0
+           294        19.2308%%             70             36       0.203891            0
+           308        15.3846%%             56             28       0.163809            0
+           322        11.5385%%             42             26       0.123664            0
+           336        7.69231%%             28             20      0.0834657            0
+           350        3.84616%%             14             12      0.0432041            0
+           364              0%%              0              0     0.00288264            0
+           363              0%%              0              0              0            0
+----------------------------------------------------------------------------------------------------------------------------
+Total count of cells removed = 363
+
+Done in 0 seconds.
+Found 495 ties.
+
+Biodiversity features performance levels check. Proportions remaining:
+---------
+Feature 1:    0
+---------
+Minimum proportion remaining:    0, average:    0, weighted average:    0, maximum:    0
+
+============================================================
+* Writing final output files...
+Writing file of feature information: 02_NA_DS_out/02_NA_DS.ABF_ES100.features_info.txt
+Writing file of performance (representation, coverage, etc.) curves: 02_NA_DS_out/02_NA_DS.ABF_ES100.curves.txt
+Writing output ranking as an image...
+Saving image: 02_NA_DS_out/02_NA_DS.ABF_ES100.jpg (JPEG format)
+Writing ranking as a GIS raster map...
+Saving raster: 02_NA_DS_out/02_NA_DS.ABF_ES100.rank.compressed.tif (GTiff format)
+ Note: not writing 'proportional loss map'
+No automated post-processing file specified
+============================================================
+Finished spatial prioritization process. Freeing data structures in memory...
+Finished at 4:35:42 PM (2015/12/4) 
+Elapsed time: 136 ms == 3.78e-05 hours == 1.57e-06 days

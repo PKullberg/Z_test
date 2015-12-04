@@ -1,0 +1,8 @@
+[Settings]
+removal rule = 2
+warp factor  = 2000
+edge removal = 1
+
+[Transformed layers]
+output distribution smoothing transformed layers = 1
+
