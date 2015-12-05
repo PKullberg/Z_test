@@ -7,7 +7,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  For more information and conditions of use of this software, see the
  disclaimer in Help->About Zonation, in the graphical user interface
 
-Starting Zonation run on 'LH4-EKOEVO2' at 4:35:37 PM (2015/12/4) 
+Starting Zonation run on 'LH2-BIOTI25' at 11:48:58 AM (2015/12/5) 
 Locale is: C
 Zonation core process parameters: 
    run mode: normal run (-r)
@@ -21,7 +21,7 @@ Zonation core process parameters:
 
 Reading settings file: 04_zero_DS.dat
    Option not overriden in command line, removal rule: 2
-   Option not overriden in command line, warp factor: 2000
+   Option not overriden in command line, warp factor: 1
 
 Output settings:
    Output weighted range size corrected richness map: yes
@@ -54,7 +54,7 @@ Memory allocated successfully!
 ======------ Allocating memory for input layers... ------======
 Using compact structure (lookup version),  sizeof(Occur_Container): 18, sizeof(allocated occurrence): 6
 Counting effective occurrencies
-Time: 1449239737 = 4:35:37 PM (2015/12/4) 
+Time: 1449308938 = 11:48:58 AM (2015/12/5) 
 Feature file #1: ../Zero_raster.tif; non-missing cells: 9604
 Total # of feature layers: 1
 Total # of cells in every layer: 10000
@@ -62,7 +62,7 @@ Effective # of cells (cells with any occurrence, globally): 9604
 Total # of occurrencies: 9604, counted across 1 layers; average across layers: 9604
 Percentage of globally effective occurrencies = 100 % (relative to total effective cells) = 96.04 % (relative to total cells)
 Memory required for biodiversity features: 0.2961 MB, of which base memory: 0.2412 MB, and occurrencies require: 0.05495 MB
-Time now: 1449239737 = 4:35:37 PM (2015/12/4) 
+Time now: 1449308938 = 11:48:58 AM (2015/12/5) 
 Finished preload/counting effective occurrencies. Elapsed: 0 seconds.
 ======------ Allocating memory for input layers: finished successfully ------======
 
@@ -87,14 +87,14 @@ Freeing structures required for distribution smoothing...
 ******=====----- Finished loading and transformation of feature data layers -----=====*********
 
 Calculating richness across biodiversity features...
-Done in 0 seconds. Time now: 4:35:37 PM (2015/12/4) 
+Done in 0 seconds. Time now: 11:48:58 AM (2015/12/5) 
 Saving raster map of weighted range size corrected richness
 Saving raster: 04_zero_DS_out/04_zero_DS.ABF_ES100.wrscr.compressed.tif (GTiff format)
 
 ******=====----- Preparing to start the ranking process... -----=====**********
 Note: using edge removal.
 
-Loaded data and initialized in 0 seconds. Current time: 4:35:37 PM (2015/12/4) 
+Loaded data and initialized in 0 seconds. Current time: 11:48:58 AM (2015/12/5) 
 Cells with data = 9604; locations with missing values = 396
 
 ---------------------======********** RANKING STARTS HERE ***********======-----------------------
@@ -112,37 +112,37 @@ The following lines provide information on how the ranking is done by iterative 
 Cells removed, proportion of landscape remaining, cost of remaining landscape, edge list length, smallest remaining proportion in all biodiversity features (e.g. species), time elapsed (s)
 ----------------------------------------------------------------------------------------------------------------------------
              0            100%%              0            388       0.999998            0
-           384        96.0021%%           9221            388       0.972499            0
-           768        92.0042%%           8837            388       0.942232            0
-          1152        88.0062%%           8453            384       0.910771            0
-          1536        84.0083%%           8069            378       0.878479            0
-          1920        80.0104%%           7685            368       0.845444            0
-          2304        76.0125%%           7301            360       0.811646            0
-          2688        72.0146%%           6917            350       0.777055            0
-          3072        68.0167%%           6533            340       0.741637            0
-          3456        64.0187%%           6149            329       0.705354            1
-          3840        60.0208%%           5765            320       0.668174            1
-          4224        56.0229%%           5381            308       0.630063            1
-          4608         52.025%%           4997            300       0.591016            1
-          4992        48.0271%%           4613            290        0.55104            1
-          5376        44.0292%%           4229            282       0.510149            1
-          5760        40.0312%%           3845            274       0.468384            1
-          6144        36.0333%%           3461            258       0.425811            1
-          6528        32.0354%%           3077            246       0.382422            1
-          6912        28.0375%%           2693            232        0.33821            1
-          7296        24.0396%%           2309            216       0.293155            1
-          7680        20.0416%%           1925            196       0.247072            1
-          8064        16.0437%%           1541            176       0.200124            2
-          8448        12.0458%%           1157            156       0.152108            2
-          8832        8.04789%%            773            126       0.102942            2
-          9216        4.04997%%            389             90      0.0525656            2
-          9600      0.0520587%%              5              5    0.000823025            2
-          9604              0%%              0              0              0            2
+           384        96.0021%%           9221            388       0.972422            1
+           768        92.0042%%           8837            388       0.942151            1
+          1152        88.0062%%           8453            384       0.910688            1
+          1536        84.0083%%           8069            378       0.878394            2
+          1920        80.0104%%           7685            368       0.845357            2
+          2304        76.0125%%           7301            360       0.811557            2
+          2688        72.0146%%           6917            350       0.776964            2
+          3072        68.0167%%           6533            340       0.741543            3
+          3456        64.0187%%           6149            329       0.705259            3
+          3840        60.0208%%           5765            320       0.668076            3
+          4224        56.0229%%           5381            308       0.629963            3
+          4608         52.025%%           4997            300       0.590913            4
+          4992        48.0271%%           4613            290       0.550935            4
+          5376        44.0292%%           4229            282       0.510041            4
+          5760        40.0312%%           3845            274       0.468274            4
+          6144        36.0333%%           3461            258       0.425699            5
+          6528        32.0354%%           3077            246       0.382308            5
+          6912        28.0375%%           2693            232       0.338094            5
+          7296        24.0396%%           2309            216       0.293037            5
+          7680        20.0416%%           1925            196       0.247072            5
+          8064        16.0437%%           1541            176       0.200124            6
+          8448        12.0458%%           1157            156       0.152108            6
+          8832        8.04789%%            773            126       0.102942            6
+          9216        4.04997%%            389             90      0.0525656            6
+          9600      0.0520587%%              5              5    0.000823025            6
+          9604              0%%              0              0              0            6
 ----------------------------------------------------------------------------------------------------------------------------
 Total count of cells removed = 9604
 
-Done in 2 seconds.
-Found 2371 ties.
+Done in 6 seconds.
+Found 9013 ties.
 
 Biodiversity features performance levels check. Proportions remaining:
 ---------
@@ -162,5 +162,5 @@ Saving raster: 04_zero_DS_out/04_zero_DS.ABF_ES100.rank.compressed.tif (GTiff fo
 No automated post-processing file specified
 ============================================================
 Finished spatial prioritization process. Freeing data structures in memory...
-Finished at 4:35:39 PM (2015/12/4) 
-Elapsed time: 2346 ms == 0.000652 hours == 2.72e-05 days
+Finished at 11:49:04 AM (2015/12/5) 
+Elapsed time: 5757 ms == 0.0016 hours == 6.66e-05 days

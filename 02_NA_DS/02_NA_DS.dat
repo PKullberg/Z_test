@@ -1,6 +1,6 @@
 [Settings]
 removal rule = 2
-warp factor  = 2000
+warp factor  = 1
 edge removal = 1
 
 [Transformed layers]
