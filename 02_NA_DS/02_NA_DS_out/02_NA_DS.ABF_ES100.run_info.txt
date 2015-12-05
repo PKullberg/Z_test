@@ -7,7 +7,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  For more information and conditions of use of this software, see the
  disclaimer in Help->About Zonation, in the graphical user interface
 
-Starting Zonation run on 'LH4-EKOEVO2' at 4:35:42 PM (2015/12/4) 
+Starting Zonation run on 'LH2-BIOTI25' at 11:48:29 AM (2015/12/5) 
 Locale is: C
 Zonation core process parameters: 
    run mode: normal run (-r)
@@ -21,7 +21,7 @@ Zonation core process parameters:
 
 Reading settings file: 02_NA_DS.dat
    Option not overriden in command line, removal rule: 2
-   Option not overriden in command line, warp factor: 2000
+   Option not overriden in command line, warp factor: 1
 
 Output settings:
    Output weighted range size corrected richness map: yes
@@ -54,7 +54,7 @@ Memory allocated successfully!
 ======------ Allocating memory for input layers... ------======
 Using compact structure (lookup version),  sizeof(Occur_Container): 18, sizeof(allocated occurrence): 6
 Counting effective occurrencies
-Time: 1449239742 = 4:35:42 PM (2015/12/4) 
+Time: 1449308909 = 11:48:29 AM (2015/12/5) 
 Feature file #1: ../NA_raster.tif; non-missing cells: 363
 Total # of feature layers: 1
 Total # of cells in every layer: 10000
@@ -62,7 +62,7 @@ Effective # of cells (cells with any occurrence, globally): 363
 Total # of occurrencies: 363, counted across 1 layers; average across layers: 363
 Percentage of globally effective occurrencies = 100 % (relative to total effective cells) = 3.63 % (relative to total cells)
 Memory required for biodiversity features: 0.0846 MB, of which base memory: 0.08253 MB, and occurrencies require: 0.002077 MB
-Time now: 1449239742 = 4:35:42 PM (2015/12/4) 
+Time now: 1449308909 = 11:48:29 AM (2015/12/5) 
 Finished preload/counting effective occurrencies. Elapsed: 0 seconds.
 ======------ Allocating memory for input layers: finished successfully ------======
 
@@ -87,14 +87,14 @@ Freeing structures required for distribution smoothing...
 ******=====----- Finished loading and transformation of feature data layers -----=====*********
 
 Calculating richness across biodiversity features...
-Done in 0 seconds. Time now: 4:35:42 PM (2015/12/4) 
+Done in 0 seconds. Time now: 11:48:29 AM (2015/12/5) 
 Saving raster map of weighted range size corrected richness
 Saving raster: 02_NA_DS_out/02_NA_DS.ABF_ES100.wrscr.compressed.tif (GTiff format)
 
 ******=====----- Preparing to start the ranking process... -----=====**********
 Note: using edge removal.
 
-Loaded data and initialized in 0 seconds. Current time: 4:35:42 PM (2015/12/4) 
+Loaded data and initialized in 0 seconds. Current time: 11:48:29 AM (2015/12/5) 
 Cells with data = 363; locations with missing values = 9637
 
 ---------------------======********** RANKING STARTS HERE ***********======-----------------------
@@ -143,7 +143,7 @@ Cells removed, proportion of landscape remaining, cost of remaining landscape, e
 Total count of cells removed = 363
 
 Done in 0 seconds.
-Found 495 ties.
+Found 492 ties.
 
 Biodiversity features performance levels check. Proportions remaining:
 ---------
@@ -163,5 +163,5 @@ Saving raster: 02_NA_DS_out/02_NA_DS.ABF_ES100.rank.compressed.tif (GTiff format
 No automated post-processing file specified
 ============================================================
 Finished spatial prioritization process. Freeing data structures in memory...
-Finished at 4:35:42 PM (2015/12/4) 
-Elapsed time: 136 ms == 3.78e-05 hours == 1.57e-06 days
+Finished at 11:48:29 AM (2015/12/5) 
+Elapsed time: 180 ms == 5e-05 hours == 2.08e-06 days
